@@ -15,6 +15,10 @@ export default function Home() {
     setPosts(data.slip)
     console.log(data.slip)
   }
+
+  const newAdvice = () => {
+    window.location.reload(false)
+  }
   
   const num = posts.id
   const advice = posts.advice
@@ -40,12 +44,9 @@ export default function Home() {
           </p>
           
           <p className='advice-color text-3xl py-4'>&apos;&apos;</p>
-          {/* <Image src="/pattern-divider-desktop.svg" alt='testing' width={20} height={20} /> */}
-          {/* <form> */}
-          <button className='circle w-12 h-12 my-14 absolute rounded-full text-center flex justify-center items-center'>
-            <Image src="/icon-dice.svg" alt='testing' width={20} height={20} />
+          <button onClick={newAdvice} className='circle w-12 h-12 my-14 absolute rounded-full text-center flex justify-center items-center'>
+            <Image src="/icon-dice.svg" alt='button' width={20} height={20} />
           </button>
-          {/* </form> */}
         </div>
       </div>
     </div>
