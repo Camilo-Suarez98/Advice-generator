@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+  --LightCyan: hsl(193, 38%, 86%);
+  --NeonGreen: hsl(150, 100%, 66%);
+  --GrayishBlue: hsl(217, 19%, 38%);
+  --DarkGrayishBlue: hsl(217, 19%, 24%);
+  --DarkBlue: hsl(218, 23%, 16%);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.square {
+  background-color: var(--DarkGrayishBlue);
+}
+
+.dark-blue {
+  background-color: var(--DarkBlue);
+}
+
+.number-color {
+  color: var(--NeonGreen);
+}
+
+.advice-color {
+  color: var(--LightCyan);
+}
+
+.circle {
+  background-color: var(--NeonGreen);
+  bottom: 260px;
+}
+
+.circle:hover {
+  color: #111;
+  background: #12eb8d;
+  box-shadow: 0 0 30px #12eb8d;
+}
